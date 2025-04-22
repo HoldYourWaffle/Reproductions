@@ -12,7 +12,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:unit": "vitest",
 		"test": "deno task test:unit --run && deno task test:e2e",
-		"test:e2e": "playwright test"
+		"test:e2e": "PW_DISABLE_TS_ESM=1 playwright test"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.49.1",
